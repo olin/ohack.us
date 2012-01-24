@@ -3,15 +3,15 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>SLAC @Olin</title>
+    <title>SLAC @Olin [ohack]</title>
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <!-- Le styles -->
-		<link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css">
+    <!-- styles -->
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 		<style type="text/css">
       /* Override some defaults */
       html, body {
@@ -19,7 +19,7 @@
 				background-repeat: repeat;
       }
 			body {
-				padding-top: 20px;
+				padding-top: 40px;
 			}
       .container {
         width: 820px; /* downsize our container to make the content feel a bit tighter and more cohesive. NOTE: this removes two full columns from the grid, meaning you only go to 14 columns and not 16. */
@@ -42,11 +42,10 @@
         background-color: #f5f5f5;
         padding: 20px 20px 10px;
         margin: -20px -20px 20px;
-        -webkit-border-radius: 6px 6px 0px 0px;
-           -moz-border-radius: 6px 6px 0px 0px;
-                border-radius: 6px 6px 0px 0px;
       }
-
+      .topbar .btn {
+        border: 0;
+      }
     </style>
 
     <!-- Le fav and touch icons -->
@@ -54,9 +53,30 @@
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
     <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+		<!-- scripts -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script src="js/bootstrap-dropdown.js"></script>
   </head>
 
   <body>
+
+    <div class="topbar">
+      <div class="fill">
+        <div class="container">
+          <a class="brand" href="#">ohack</a>
+          <ul class="nav secondary-nav">
+            <li class="dropdown" data-dropdown="dropdown">
+              <a href="#" class="dropdown-toggle">stuff</a>
+              <ul class="dropdown-menu">
+								<li><a href="/">slac</a></li>
+								<li><a href="compsec.fa2011">compsec.fa2011</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
     <div class="container">
 			<img src="images/olin.png" 
@@ -67,7 +87,7 @@
 
       <div class="content">
         <div class="page-header">
-          <h1>SLAC <small>Stay Late and Code</small></h1>
+          <h1>Stay Late and Code</h1>
 						
         </div>
         <div class="row">
@@ -75,10 +95,14 @@
             <h2>What's this?</h2>
 						<p>
 							Bacon tongue bresaola pig flank, ribeye shankle fatback pork chop chuck ham. Drumstick pancetta ham hock ball tip leberkase chuck chicken short ribs jerky, meatball shank ground round strip steak. Frankfurter turkey andouille bacon, shoulder corned beef filet mignon ground round pork belly tenderloin fatback capicola ham hock chuck salami. Chicken biltong chuck, venison capicola shank t-bone frankfurter flank meatball filet mignon pastrami tail drumstick. Meatball tri-tip cow, bresaola strip steak shank boudin beef prosciutto pork chop sausage corned beef pork loin.
-
+						</p>
+						<p>
 							Drumstick beef ribs ham hock, capicola pork chop prosciutto short loin meatloaf swine pancetta shankle tongue. Andouille short loin shankle turkey, ground round cow drumstick tri-tip. Sirloin chicken tail salami ham pastrami, bresaola shank. Swine spare ribs beef shankle t-bone. Brisket fatback pastrami, chicken capicola tenderloin corned beef.
+						</p>
 
+						<p>
 							Boudin flank tenderloin bresaola, short loin ground round strip steak pig. Tongue boudin drumstick filet mignon jowl spare ribs, frankfurter pork loin. Bresaola tail short ribs, biltong ground round shank cow beef ribs shoulder capicola turkey corned beef bacon t-bone. Pork chop ground round shankle, t-bone chicken jerky prosciutto tenderloin turducken.
+						</p>
 
 						</p>
 					</div>
@@ -96,7 +120,7 @@
 					<div class="span14">
 						<footer>
 							<p>
-								&copy; mark & tcr 2012
+								&copy; mark & tcr 2012 / ohack
 							</p>
 						</footer>
 					</div>
